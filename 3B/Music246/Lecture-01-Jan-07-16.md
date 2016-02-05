@@ -8,10 +8,10 @@
 
 ## Week 1: What to Listen For in Film
 - Musical accompaniment of Narrative Film
-- _Example_: Appolo 13 (1995) Composer: James Horner
+- _Example_: Apollo 13 (1995) Composer: James Horner
   - James Horner did music for Titanic, Avatar and so on. 2 Oscars. Died
     recently.
-  - Based on real events, failed 3rd apollo mission
+  - Based on real events, failed 3rd Apollo mission
   - __Clip__: Early in the film. Right before the launch
     - Without music: 
       - Transition between seemed abrupt because it jumped between a scene of
@@ -90,11 +90,11 @@
           professionalism etc.
 
 - What is a movie?
-  - Narative - tells a story
+  - Narrative - tells a story
   - "Suspension of Disbelief"
-  - Film convention attempt to minimize anything that thretens "Suspension of
+  - Film convention attempt to minimize anything that threatens "Suspension of
     Disbelief". Except for the use of music
-  - You walk into a movie theater and you enter an agreement with the movie
+  - You walk into a movie theatre and you enter an agreement with the movie
     maker to accept that the movie you are going to see is real and this is
     called "Suspension of Disbelief"
   - You need to buy into the movie because without this there is no point in
@@ -105,7 +105,7 @@
       - Example: blood stain moves between scenes
       - Film makers really try to avoid this
       - Microphone drops into the scene
-  - Any inconsistenties can challenge your ability to believe it and breaks you
+  - Any inconsistencies can challenge your ability to believe it and breaks you
     sense of belief.
   - Music is an example of something that challenges the ability to believe
     because we don't have music in real life to help guide us but we are happy
@@ -120,7 +120,7 @@
       the radio from the 1950s to convey that the movie is now based in the
       1950s and not the 30s like the original. Subtle but gets the time period
       across and this speeds up the transfer of this information.
-  2. Music can underline or create psycological refinements.
+  2. Music can underline or create psychological refinements.
     - the unspoken thoughts of a character or the unseen implications of a
       situation.
     - foreshadowing - example the original Star Wars (1977) - Luke argues with
@@ -143,7 +143,7 @@
 
 - Examples:
   - Raiders of the Lost Ark (1981). Composer: John Williams
-    - Very nostalgic movies. Speilburg made it like the movies he loved to
+    - Very nostalgic movies. Spielberg made it like the movies he loved to
       watch when he was growing up. The episode would end with a scene where
       the main actors death is immenent but comes out of it in the next
       episode.
