@@ -1,0 +1,13 @@
+\contentsline {chapter}{Week 1: Sept. 11 - 17}{3}{chapter*.2}
+\contentsline {chapter}{Week 2: Sept. 18 - 24}{4}{chapter*.3}
+\contentsline {section}{Sept 23: Speed Dating Round 1}{4}{section*.4}
+\contentsline {subsection}{Team 7: Snow Removal}{4}{subsection*.5}
+\contentsline {subsection}{Team 10: International Shipping}{4}{subsection*.6}
+\contentsline {subsection}{Team 5: Heat Exhaustion}{4}{subsection*.7}
+\contentsline {subsection}{Team 1: Real Time Wait Time}{5}{subsection*.8}
+\contentsline {subsection}{Team 2: Women's Health}{5}{subsection*.9}
+\contentsline {subsection}{Team 4: Pressure Ulcers}{5}{subsection*.10}
+\contentsline {subsection}{Team 8: Understand Products}{5}{subsection*.11}
+\contentsline {subsection}{Feedback for Us}{6}{subsection*.12}
+\contentsline {chapter}{Bibliography}{7}{chapter*.13}
+\contentsfinish 

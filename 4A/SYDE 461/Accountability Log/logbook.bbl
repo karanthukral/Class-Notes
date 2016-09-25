@@ -1,0 +1,22 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Franc et~al.(2015)Franc, Sofka, and Bartos]{ldmntwl}
+Vojtech Franc, Michal Sofka, and Karel Bartos.
+\newblock Learning detector of malicious network traffic from weak labels.
+\newblock In \emph{Proceedings of the European Conference on Machine Learning
+  and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  Porto, Portugal, 7--11~September 2015.
+\newblock URL \url{http://www.sofka.com}.
+
+\bibitem[Nowak(2011)]{neymanpearson}
+Robert Nowak.
+\newblock Neyman-pearson detectors.
+\newblock \url{http://nowak.ece.wisc.edu/ece830/ece830_fall11_lecture6.pdf},
+  2011.
+
+\end{thebibliography}
