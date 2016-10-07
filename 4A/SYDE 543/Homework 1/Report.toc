@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {3}Haptic Feedback and Attention}{4}{section.3}
 \contentsline {section}{\numberline {4}Adaption in Design}{5}{section.4}
 \contentsline {section}{\numberline {5}Gestalt Principles: Proximity}{7}{section.5}
+\contentsline {section}{\numberline {6}References}{8}{section.6}
