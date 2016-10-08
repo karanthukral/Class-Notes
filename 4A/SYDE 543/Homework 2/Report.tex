@@ -36,7 +36,62 @@
 
 	% Couldn't figure out how to automate this, but leave this line in to restart page numbers at 1 and with arabic numbers.
 	\startarabicpagenumbers
+	
 	\section{Signal Detection Task: X-Ray Diagnosis}
-	For the purposes of this report, using X-Rays for diagnosis is an example of signal detection theory in the medical field.
+	For the purposes of this report, using X-Rays for diagnosis is an example of signal detection theory in the medical field. Currently speciliazed radiologists are responsible for taking x-rays and diagnosing based on them. An example x-ray showing a patient with lung cancer is shown in Figure \ref{lungcancer}. As it can be seen from the x-ray, the radiologist is expected to make a diagnosis on studying the result and using their experience to supliment their decision.
+	
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.5\textwidth]{lungcancer}
+		\caption{Labeled X-Ray showing Lung Cancer}
+		\label{lungcancer}
+	\end{figure}
+	
+	\subsection{Signal Detection States}
+	Based on a doctor's recomendation, a patient goes to a radiologist for an x-ray. The radiologist is responsible for using the result along with the doctors initial assesment to provide a preliminary diagnosis. This job can be stated as a signal detection problem as shown below. For the example case, we assume that the radiologist is looking for evidence of cancer.
+	
+	\begin{enumerate}
+		\item *Hit*: The radiologist is correctly able to identify and diagnosis cancer using the x-ray
+		\item *Miss*: The radiologist misses the evidence of cancer in the x-ray
+		\item *False Alarm*: The radiologist diagnosis cancer when the patient does not have cancer
+		\item *Correct Rejection**: The radiologist rejects cancer when the patient indeed does not have cancer.
+	\end{enumerate}
+	
+	This leads to a generic signal detection problem where the radiologist response can either be a hit or a miss depending on their diagnosis and the true diagnosis about the patient.
+	
+	
+	
+	\subsection{Test Procedure}
+	In order to test a radiologists capability to dishtinguish targets from non targets, the manager needs large amounts of patient x-rays whose diagnosis are already known. In order to measure the radiologists performance in regards to detecting cancer or not detecting cancer, the manager needs to measure their sensitivity. Sensitivity is the underlying ability to discriminate signals from noise. Figure \ref{sensitivity-graph1} shows graphs to illustarte the difference between noise and a signal. The x axis is the actual variable measured and the why axis is show the probability of x given that the measured variable is either noise or a signal.
+	
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.5\textwidth]{sensitivity-graph1}
+		\caption{$P(X|noise)$ and $P(X|signal)$. Noise = No cancer and Signal = cancer}
+		\label{sensitivity-graph1}
+	\end{figure}
+	
+	Due to the overlap in the signal and noise ditributions, the operator needs to develop a criterion $X_c$ such that the input if defined as noise ix $x\ <=\ X_c$ and signal otherwise. This is shown in Figure \ref{graph2}.
+	
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.5\textwidth]{graph2}
+		\caption{}
+		\label{graph2}
+	\end{figure}
+	
+	A radiologist with betetr sensitivity has a much larger separation between the two distributions. A testing procedure along with all required calculations in explained below.
+	
+	\begin{itemize}
+		\item Collect large amounts of known diagnosis along with x-rays
+		\item Ask the radiologist to diagnosis the x-rays without informing them of the true diagnosis.
+		\item Measure the number of time radiologist makes a correct diagnosis and everytime they make a wrong one.
+		\item Use the number of correct diagnosis to calculate the probability of a hit and probability of correct rejections. $P(hit)=\frac{\text{number of correct cancer diagnosis}}{\text{total number of true cancer diagnosis}}$ and $P(correct\ rejection)=\frac{\text{number of correct non-cancer diagnosis}}{\text{total number of true non-cancer diagnosis}}$.
+		\item Similarly calculate the probability of a false alarm and a miss. $P(false\ alarm)=\frac{\text{number of wrong cancer diagnosis}}{\text{total number of true non-cancer diagnosis}}$ and $P(miss)=\frac{\text{number of wrong non-cancer diagnosis}}{\text{total number of true cancer diagnosis}}$.
+		\item With all the probabilities calculated, one can calculate the sensitivity ($d'$) of the radiologist. The ditributions shown in Figure \ref{sensitivity-graph1} are normal distributions. Thus to calculate $d'$, one needs the values of the probability constant ($Z$) from a table. $d'=Z(P(hit))-Z(P(false\ alarm))$.
+	\end{itemize}	 
+	
+	With the value of sensitivity calculated above, the manager can make a sientific decision on the radiologist's performance. The larger the value of sensitivity, the better the radiologist is in differentiating between noise (no cancer) and signal (cancer).
+	
 	
 \end{document}
