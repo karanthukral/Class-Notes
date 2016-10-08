@@ -103,5 +103,40 @@
 	
 	Another issue with the profession is the lack of resources when it comes to radiologists. Due to the low number of radiologists available, the rest are overworked and don't have the liberty of spending enough time studying the x-ray[]. In order to improve this from the manager's perspective, they need to limit the number of hours a radiologist is allowed to work. This aims to prevent fatigue and overload both of which can negatively affect the radiologist's senstitivity. This can be done by limiting over-time allowed or increasing the pay in order to attract more people to the profession. Another way for this would be to provide radiologists with breaks (apart from their lunch breaks) spread out throughout the day.
 	
+	\subsection{Response Criterion}
+	In order to measure the radiologist's perference in the trade-off between more hits and avoiding false alarms, the manager needs to calculat their response criterion. In order to compute the decision criterion, the manager can use equation \ref{beta}. 
+	\begin{equation}
+		\beta = \frac{P(X|S)}{P(X|N)} = \frac{\text{Ordinate}(P(Hit))}{\text{Ordinate}(P(False\ Alarm))}
+		\label{beta}
+	\end{equation}
+	
+	$\beta$ is the ratio of signal probability density to noise probability density at $X_c$ which is the radiologists decision criterion. As $X_c$ moves left on graph as shown in Figure \ref{graph2}, $\beta$ decreaseas and the radiologists is more likely to detect a signal and vice versa in the other direction. A test plan is laid out below.
+	
+	\begin{enumerate}
+		\item Collect large amounts of known diagnosis along with x-rays
+		\item Ask the radiologist to diagnosis the x-rays without informing them of the true diagnosis.
+		\item Measure the number of time radiologist makes a correct diagnosis and everytime they make a wrong one.
+		\item Using the results from above to calulate the $P(hit)$, $P(false\ alarm)$ using the formulas provided above.
+		\item Using the values calculated in the above step, find the ordinate values for $O(P(hit))$ and $O(P(false\ alram))$ using a constant table.
+		\item With the ordinate values, calculate $\beta = \frac{O(P(hit))}{O(P(false\ alarm))}$
+		\item Larger the $\beta$ value the more conservative the radiologist and vice versa.
+	\end{enumerate}
+	
+	In order to calculate the optimal decision criteria, one needs to know the values (V) and cost (C) associated with a hit, miss, correct rejection and a false alarm along with $P(noise) = P(\text{no cancer x-ray})$ and $P(signal) = P(\text{cancer x-ray})$. For the purposes of this report, it is assumed that these values are known. The formula for the optimal decision criterion is shown in Equation \ref{beta-o}.
+	
+	\begin{equation}
+		\beta_{opt} = \frac{P(\text{noise})}{P(\text{signal})} * \frac{[V(\text{correct rejection}) + c(\text{false alarm})]}{V(\text{hit}) + C(\text{miss})}
+		\label{beta-o}
+	\end{equation}
+	
+	\subsection{Decision Criterion Improvements}
+	In order to allow radiologists to make better trade offs the following steps can be followed:
+	
+	\begin{enumerate}
+		\item The main step to follow is to teach the radiologists about the value and cost associated with each of the options. If the radiologists know of a numeric value associated with the value of a correct rejection and cost of a false alarm, they will be able to make better decisons. Increasing this V(correct rejection) and C(false alarm) will increase $\beta$ leading to more conservative responses from the radiologists. This can be done through repeated training and having numeric values assigned to value and cost of each of the options.
+		\item Another way to affect the radiologists decision criterion is to change the preceived signal and noise probabilities. This can be done by adding known x-rays with or without cancer dueing training and changing the number of these x-rays will cause a shift in $P(signal)=P(cancer)$ and $P(noise)=P(not\ cancer)$. Increasing $P(noise)$ will cause $\beta$ to increase leading to a more conservative behaviour whereas increasing $P(signal)$ will decrease $\beta$ and lead to more risky (say "yes" more) behaviour.
+		\item The last way to improve this would be to teach the radiologists using existing/past known cases and disussing the results of the diagnosis made. As an example, studying a case where a radiologist missed a cancer diagnosis and the result will make help adapt the radiologists percieved payoffs of outcomes. Similarly studying the negative effects of a false alarm in a past case will make them be more cautious. Selecting these known cases and using them can help change the perceptions of radiologists and help get them to conform to a desired response criterion.
+	\end{enumerate}
+	
 	
 \end{document}
