@@ -38,23 +38,23 @@
 	\startarabicpagenumbers
 	
 	\section{Signal Detection Task: X-Ray Diagnosis}
-	For the purposes of this report, using X-Rays for diagnosis is an example of signal detection theory in the medical field. Currently speciliazed radiologists are responsible for taking x-rays and diagnosing based on them. An example x-ray showing a patient with lung cancer is shown in Figure \ref{lungcancer}. As it can be seen from the x-ray, the radiologist is expected to make a diagnosis on studying the result and using their experience to supliment their decision.
+	For the purposes of this report, using X-Rays for diagnosis is an example of signal detection theory in the medical field. Currently speciliazed radiologists are responsible for taking x-rays and diagnosing based on them. An example x-ray showing a patient with lung cancer is shown in Figure \ref{lungcancer}. As it can be seen from the x-ray, the radiologist is expected to make a diagnosis on studying the result and using their experience to supplement their decision.
 	
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=0.5\textwidth]{lungcancer}
-		\caption{Labeled X-Ray showing Lung Cancer}
+		\caption{Labeled X-Ray showing Lung Cancer [1]}
 		\label{lungcancer}
 	\end{figure}
 	
 	\subsection{Signal Detection States}
-	Based on a doctor's recomendation, a patient goes to a radiologist for an x-ray. The radiologist is responsible for using the result along with the doctors initial assesment to provide a preliminary diagnosis. This job can be stated as a signal detection problem as shown below. For the example case, we assume that the radiologist is looking for evidence of cancer.
+	Based on a doctor's recommendation, a patient goes to a radiologist for an x-ray. The radiologist is responsible for using the result along with the doctors initial assessment to provide a preliminary diagnosis. This job can be stated as a signal detection problem as shown below. For the example case, we assume that the radiologist is looking for evidence of cancer.
 	
 	\begin{enumerate}
-		\item *Hit*: The radiologist is correctly able to identify and diagnosis cancer using the x-ray
-		\item *Miss*: The radiologist misses the evidence of cancer in the x-ray
-		\item *False Alarm*: The radiologist diagnosis cancer when the patient does not have cancer
-		\item *Correct Rejection**: The radiologist rejects cancer when the patient indeed does not have cancer.
+		\item \textbf{Hit}: The radiologist is correctly able to identify and diagnosis cancer using the x-ray
+		\item \textbf{Miss}: The radiologist misses the evidence of cancer in the x-ray
+		\item \textbf{False Alarm}: The radiologist diagnosis cancer when the patient does not have cancer
+		\item \textbf{Correct Rejection}: The radiologist rejects cancer when the patient indeed does not have cancer.
 	\end{enumerate}
 	
 	This leads to a generic signal detection problem where the radiologist response can either be a hit or a miss depending on their diagnosis and the true diagnosis about the patient.
@@ -62,21 +62,21 @@
 	
 	
 	\subsection{Test Procedure}
-	In order to test a radiologists capability to dishtinguish targets from non targets, the manager needs large amounts of patient x-rays whose diagnosis are already known. In order to measure the radiologists performance in regards to detecting cancer or not detecting cancer, the manager needs to measure their sensitivity. Sensitivity is the underlying ability to discriminate signals from noise. Figure \ref{sensitivity-graph1} shows graphs to illustarte the difference between noise and a signal. The x axis is the actual variable measured and the why axis is show the probability of x given that the measured variable is either noise or a signal.
+	In order to test a radiologists capability to distinguish targets from non targets, the manager needs large amounts of patient x-rays whose diagnosis are already known. In order to measure the radiologists performance in regards to detecting cancer or not detecting cancer, the manager needs to measure their sensitivity. Sensitivity is the underlying ability to discriminate signals from noise. Figure \ref{sensitivity-graph1} shows graphs to illustrate the difference between noise and a signal. The x axis is the actual variable measured and the why axis is show the probability of x given that the measured variable is either noise or a signal.
 	
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=0.5\textwidth]{sensitivity-graph1}
-		\caption{$P(X|noise)$ and $P(X|signal)$. Noise = No cancer and Signal = cancer}
+		\caption{$P(X|noise)$ and $P(X|signal)$. Noise = No cancer and Signal = cancer [2]}
 		\label{sensitivity-graph1}
 	\end{figure}
 	
-	Due to the overlap in the signal and noise ditributions, the operator needs to develop a criterion $X_c$ such that the input if defined as noise ix $x\ <=\ X_c$ and signal otherwise. This is shown in Figure \ref{graph2}.
+	Due to the overlap in the signal and noise attributions, the operator needs to develop a criterion $X_c$ such that the input if defined as noise ix $x\ <=\ X_c$ and signal otherwise. This is shown in Figure \ref{graph2}.
 	
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=0.5\textwidth]{graph2}
-		\caption{}
+		\caption{[2]}
 		\label{graph2}
 	\end{figure}
 	
@@ -99,9 +99,8 @@
 	\begin{itemize}
 		\item Providing example of the signal: This can be done by building a image recognition system to use the patient's x-ray and find similar diagnosed x-rays in order to provide some guidance to the radiologist. This can be done in a way to provide radiologists a second opinion without needing to find another specialist for it. Over time this second opinion will make their signal detection better.
 		\item Regular tests: Radiologists should be made to reguarly go through a testing procedure like the one laid out above. This test is to provide the radiologists with more knowledge and common mistakes make by them. Having a consistent track of their sensitivity will make it easier for the radiologist to track their progress over time.
+		\item Another issue with the profession is the lack of resources when it comes to radiologists. Due to the low number of radiologists available, the rest are overworked and don't have the liberty of spending enough time studying the x-ray[3]. In order to improve this from the manager's perspective, they need to limit the number of hours a radiologist is allowed to work. This aims to prevent fatigue and overload both of which can negatively affect the radiologist's senstitivity. This can be done by limiting over-time allowed or increasing the pay in order to attract more people to the profession. Another way for this would be to provide radiologists with breaks (apart from their lunch breaks) spread out throughout the day.
 	\end{itemize}
-	
-	Another issue with the profession is the lack of resources when it comes to radiologists. Due to the low number of radiologists available, the rest are overworked and don't have the liberty of spending enough time studying the x-ray[]. In order to improve this from the manager's perspective, they need to limit the number of hours a radiologist is allowed to work. This aims to prevent fatigue and overload both of which can negatively affect the radiologist's senstitivity. This can be done by limiting over-time allowed or increasing the pay in order to attract more people to the profession. Another way for this would be to provide radiologists with breaks (apart from their lunch breaks) spread out throughout the day.
 	
 	\subsection{Response Criterion}
 	In order to measure the radiologist's perference in the trade-off between more hits and avoiding false alarms, the manager needs to calculat their response criterion. In order to compute the decision criterion, the manager can use equation \ref{beta}. 
@@ -137,6 +136,11 @@
 		\item Another way to affect the radiologists decision criterion is to change the preceived signal and noise probabilities. This can be done by adding known x-rays with or without cancer dueing training and changing the number of these x-rays will cause a shift in $P(signal)=P(cancer)$ and $P(noise)=P(not\ cancer)$. Increasing $P(noise)$ will cause $\beta$ to increase leading to a more conservative behaviour whereas increasing $P(signal)$ will decrease $\beta$ and lead to more risky (say "yes" more) behaviour.
 		\item The last way to improve this would be to teach the radiologists using existing/past known cases and disussing the results of the diagnosis made. As an example, studying a case where a radiologist missed a cancer diagnosis and the result will make help adapt the radiologists percieved payoffs of outcomes. Similarly studying the negative effects of a false alarm in a past case will make them be more cautious. Selecting these known cases and using them can help change the perceptions of radiologists and help get them to conform to a desired response criterion.
 	\end{enumerate}
+	
+	\section{References}
+	$[1]$ "Small Cell Cancer of the Lung", Aboutcancer.com, 2016. [Online]. Available: \url{http://www.aboutcancer.com/scl_lung_cxr_bmc_1107.jpg}. [Accessed: 12- Oct- 2016]. \\
+	$[2]$ S.  Cao, "SYDE 543 Lecture Slides", 2016. [Accessed: 12- Oct- 2016].\\
+	$[3]$ C.  Proval, "Radiologist workforce decline projected through 2016", Radiology Business, 2014. [Online]. Available: \url{http://www.radiologybusiness.com/topics/healthcare-economics/radiologist-workforce-decline-projected-through-2016}. [Accessed: 12- Oct- 2016].
 	
 	
 \end{document}

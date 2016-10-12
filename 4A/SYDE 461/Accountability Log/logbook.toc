@@ -14,5 +14,6 @@
 \contentsline {section}{Tensorflow Example Continued}{9}{section*.15}
 \contentsline {section}{Back Propagation}{14}{section*.16}
 \contentsline {section}{Multiple Instance Learning Paper}{14}{section*.17}
-\contentsline {chapter}{Bibliography}{19}{chapter*.18}
+\contentsline {section}{Project Proposal}{19}{section*.18}
+\contentsline {chapter}{Bibliography}{20}{chapter*.19}
 \contentsfinish 
